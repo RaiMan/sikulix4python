@@ -1,12 +1,12 @@
 # sikulix4python
-Use SikuliX from real Python via py4j
+Use SikuliX from real [Python via py4j](https://www.py4j.org) (but no need to know, how it works ;-)
 
 **under development -- no guarentee for anything :-)**
 
 ... but you might post issues (questions, bugs, ideas, requests, ...)
 
 **What you need**
- - the latest 1.1.4 sikulixapi.jar ()
+ - the latest 1.1.4 sikulixapi.jar (https://raiman.github.io/SikuliX1/downloads.html)
  - a Python installation 2.7 up to 3.7 (3.7 recommended)
  - a mature Python IDE (I use IntelliJ's PyCharm) or just a Python REPL.
  
@@ -48,3 +48,13 @@ INFO: Gateway Server Started
 - anything might be changed at any time without notice
 - errors and warnings you get in the terminal window can be ignored, as long as it works as intended on the Python side
 - output coming from the SikuliX Java API is currently only going to the terminal window
+- my current development work is on macOS 10.14, Java 11, Python 3.7 with PyCharm (no tests on Windows nor Linux yet)
+
+**An example**
+
+```
+from sikulix4python import *
+hover()
+scr = Screen()
+scr.getCenter() #.grow(100).highlight(2)
+```
