@@ -48,7 +48,8 @@ INFO: Gateway Server Started
 - anything might be changed at any time without notice
 - errors and warnings you get in the terminal window can be ignored, as long as it works as intended on the Python side
 - output coming from the SikuliX Java API is currently only going to the terminal window
-- my current development work is on macOS 10.14, Java 11, Python 3.7 with PyCharm (no tests on Windows nor Linux yet)
+- my current development work is on macOS 10.14, Java 11, Python 3.7 with PyCharm
+- no tests on Windows nor Linux yet
 
 **An example**
 
@@ -57,4 +58,5 @@ from sikulix4python import *
 hover()
 scr = Screen()
 scr.getCenter() #.grow(100).highlight(2)
+# features that need finding images do not work yet
 ```
