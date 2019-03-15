@@ -53,7 +53,7 @@ INFO: Gateway Server Started
 
 **An example**
 
-```
+``` python
 # https://www.python.org should be opened in Safari
 
 # build the bridge to SikuliX
