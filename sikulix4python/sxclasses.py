@@ -31,12 +31,13 @@ class SXBase():
                 mCall += "args[0]"
                 mCallError += "%s" % (args[0])
             for nArg in range(1, countArgs):
-                mCall += ", args[%d]" % (nArg,)
+                mCall += ", args[%d]" % nArg
                 mCallError += ", %s" % (args[nArg])
             mCall += ")"
             mCallError  += ")"
             try:
-                result = eval("currentObject." + mCall, {"currentObject": self.instance, "args": args})
+                toEval = "currentObject." + mCall
+                result = eval(toEval, {"currentObject": self.instance, "args": args})
                 return result
             except:
                 print("Method missing: %s::%s" % (currentObject, mCallError))
@@ -112,36 +113,3 @@ class Location(SXBase):
 class Image(SXBase):
 
     SXClass = SXImage
-
-SCREEN = Screen()
-
-def addImagePath(path):
-    SXImagePath.add(path)
-
-def openApp(app):
-    return SXApp(app).open()
-
-def switchApp(app):
-    return SXApp(app).focus()
-
-def closeApp(app):
-    return SXApp(app).close()
-
-def click(*args):
-    return SCREEN.click(*args)
-
-def hover(*args):
-    """
-    **SCREEN::hover** Move the mouse pointer to the given target (args[0])
-
-    if the target is
-     - not given, it will be lastMatch or center (if no lastMatch) of this Region
-     - an image-filename, a Pattern or an Image, it will first be searched and the valid Match's center/targetOffset will be the target
-     - a Match: target will be center/targetOffset of the Match
-     - a Region: target will be center of the Region
-     - a Location: will be the target
-
-    :param args: see above
-    :return: int: 1 if done without errors, 0 otherwise
-    """
-    return SCREEN.hover(*args)

@@ -2,8 +2,19 @@ from . sxclasses import *
 
 SCREEN = Screen()
 
-def addImagePath(path):
-    SXImagePath.add(path)
+def setBundlePath():
+    addImagePath()
+
+def addImagePath(*path):
+    if len(path) == 0:
+        import inspect
+        stack = inspect.stack()
+        aPath = os.path.dirname(stack[1].filename)
+        SXImagePath.setBundlePath(aPath)
+        print("setBundlePath:", aPath)
+    else:
+        aPath = path[0]
+        SXImagePath.add(aPath)
 
 def openApp(app):
     return SXApp(app).open()

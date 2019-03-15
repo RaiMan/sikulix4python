@@ -1,3 +1,0 @@
-from sikulix4python import *
-hover()
-Screen().getCenter().grow(100).highlight(2)
