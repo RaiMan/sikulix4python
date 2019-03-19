@@ -2,6 +2,9 @@
 
 # build the bridge to SikuliX
 from sikulix4python import *
+
+# reset the state of SikuliX
+# only needed, but recommended in main script
 reset()
 
 #print(sxClassHelp("Region")); exit()
