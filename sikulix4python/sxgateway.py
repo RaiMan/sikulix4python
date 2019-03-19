@@ -14,9 +14,9 @@ def convertArgs(args):
 def sxstart():
     from py4j.java_gateway import JavaGateway
     try:
-        JG = JavaGateway()
-        SX = JG.jvm.org.sikuli
-        return (JG, SX)
+        JavaGW = JavaGateway()
+        SXPKG = JavaGW.jvm.org.sikuli
+        return (JavaGW, SXPKG)
     except:
         print("sxstart: SikuliX not running")
         exit(1)
@@ -25,7 +25,7 @@ def sxstart():
 
 def sxClass(className, pkgName = "script"):
     classRef = "SXPKG.%s.%s" % (pkgName, className)
-    theClass = eval(classRef)
+    theClass = eval(classRef, {"SXPKG" : SXPKG})
     try:
         theClass.getDefaultInstance4py()
     except:

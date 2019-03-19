@@ -2,6 +2,18 @@
 
 # build the bridge to SikuliX
 from sikulix4python import *
+reset()
+
+#print(sxClassHelp("Region")); exit()
+
+reg = Region()
+print(reg)
+reg.setX(100).setW(300)
+print(reg)
+hover()
+hover(reg)
+
+exit()
 
 # make images available in the folder of the script
 addImagePath()
