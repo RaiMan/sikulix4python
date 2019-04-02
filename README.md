@@ -28,7 +28,7 @@ Currently you have to look into the Python files, to find out, what is possible.
 
 Before running Python scripts this way, you have to start a SikuliX server instance manually:
 
-``java -jar path-to/sikulixapi.jar pythonserver``
+``java -jar path-to/sikulixapi.jar -p``
 
 When you see this in the terminal window, it is running:
 
@@ -36,6 +36,8 @@ When you see this in the terminal window, it is running:
 März 15, 2019 10:26:20 VORM. py4Java.GatewayServer fireServerStarted
 INFO: Gateway Server Started
 ```
+
+Adding ``-v`` to the commandline will give you startup debug information.
 
 **What is the plan**
  - have the complete official SikuliX API with docs available at time of script development (autocomplete, docs, help, ...)
@@ -48,8 +50,8 @@ INFO: Gateway Server Started
 - anything might be changed at any time without notice
 - errors and warnings you get in the terminal window can be ignored, as long as it works as intended on the Python side
 - output coming from the SikuliX Java API is currently only going to the terminal window
-- my current development work is on macOS 10.14, Java 11, Python 3.7 with PyCharm
-- no tests on Windows nor Linux yet
+- my current development work is on macOS 10.14/Windows 10, Java 11/12, Python 3.7 with PyCharm
+- no tests on Linux yet
 
 **An example**
 
