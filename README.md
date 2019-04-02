@@ -8,6 +8,7 @@ Use SikuliX from real [Python via py4j](https://www.py4j.org) (but no need to kn
 **What you need**
  - the latest 1.1.4 sikulixapi.jar (https://raiman.github.io/SikuliX1/downloads.html)
  - a Python installation 2.7 up to 3.7 (3.7 recommended)
+ - run ``pip install py4j`` to get the support on the Python side
  - a mature Python IDE (I use IntelliJ's PyCharm) or just a Python REPL.
  
 **How to test**
