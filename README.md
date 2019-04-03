@@ -38,6 +38,9 @@ März 15, 2019 10:26:20 VORM. py4Java.GatewayServer fireServerStarted
 INFO: Gateway Server Started
 ```
 
+You will get a SikuliX popup (always on top), that allows you to stop the server again.
+ Move it out of the way until needed ;-) and there is a more elegant way stop the support.
+
 Adding ``-v`` to the commandline will give you startup debug information.
 
 **What is the plan**
