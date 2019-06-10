@@ -1,4 +1,7 @@
 # sikulix4python
+
+*(currently paused --- will be continued starting in late June 2019)*
+
 Use SikuliX from real [Python via py4j](https://www.py4j.org) (but no need to know, how it works ;-)
 
 **under development -- no guarentee for anything :-)**
