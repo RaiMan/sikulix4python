@@ -9,7 +9,8 @@ Use SikuliX from real [Python via py4j](https://www.py4j.org) (but no need to kn
 ... but you might post issues (questions, bugs, ideas, requests, ...)
 
 **What you need**
- - the latest 1.1.4 sikulixapi.jar (https://raiman.github.io/SikuliX1/downloads.html)
+ - the latest ``1.1.4 sikulixapi.jar`` ([download from here](https://raiman.github.io/SikuliX1/downloads.html))
+ - the jar ``py4j-0.10.8.1.jar`` in the SikuliX extensions folder ([download from here](https://search.maven.org/remotecontent?filepath=net/sf/py4j/py4j/0.10.8.1/py4j-0.10.8.1.jar))
  - a Python installation 2.7 up to 3.7 (3.7 recommended)
  - run ``pip install py4j`` to get the support on the Python side
  - a mature Python IDE (I use IntelliJ's PyCharm) or just a Python REPL.
@@ -92,3 +93,6 @@ if match:
     match.highlight(2)
     match.click()
 ```
+
+
+[]: https://raiman.github.io/SikuliX1/downloads.html
