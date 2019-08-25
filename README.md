@@ -93,6 +93,3 @@ if match:
     match.highlight(2)
     match.click()
 ```
-
-
-[]: https://raiman.github.io/SikuliX1/downloads.html
