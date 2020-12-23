@@ -1,6 +1,6 @@
 # sikulix4python
 
-*(currently paused --- will be continued starting in late Summer 2020)*
+*(currently paused --- will be continued starting early in 2021)*
 
 Use SikuliX from real [Python via py4j](https://www.py4j.org) (but no need to know, how it works ;-)
 
@@ -9,7 +9,7 @@ Use SikuliX from real [Python via py4j](https://www.py4j.org) (but no need to kn
 ... but you might post issues (questions, bugs, ideas, requests, ...)
 
 **What you need**
- - the latest ``1.1.4 sikulixapi.jar`` ([download from here](https://raiman.github.io/SikuliX1/downloads.html))
+ - the latest ``sikulixapi.jar`` ([download from here](https://raiman.github.io/SikuliX1/downloads.html))
  - the jar ``py4j-0.10.8.1.jar`` in the SikuliX extensions folder ([download from here](https://search.maven.org/remotecontent?filepath=net/sf/py4j/py4j/0.10.8.1/py4j-0.10.8.1.jar))
  - a Python installation 2.7 up to 3.7 (3.7 recommended)
  - run ``pip install py4j`` to get the support on the Python side
