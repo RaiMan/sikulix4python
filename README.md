@@ -34,16 +34,13 @@ Before running Python scripts this way, you have to start a SikuliX server insta
 
 ``java -jar path-to/sikulixapi.jar -p``
 
-When you see this in the terminal window, it is running:
+When you see this in the commandline window, it is running:
 
 ```
-März 15, 2019 10:26:20 VORM. py4Java.GatewayServer fireServerStarted
-INFO: Gateway Server Started
+[info] SikulixAPI: Running py4j server on port 25333
 ```
 
 To stop the server you can use the known stop hotkey (Windows: ALT-SHIFT-C, Mac: CMD-SHIFT-C).
-
-Adding ``-v`` to the commandline will give you startup debug information.
 
 **What is the plan**
  - have the complete official SikuliX API with docs available at time of script development (autocomplete, docs, help, ...)
