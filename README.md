@@ -10,7 +10,7 @@ Use SikuliX from real [Python via py4j](https://www.py4j.org) (but no need to kn
 
 **What you need**
  - the latest ``sikulixapi.jar (2.0.5+)`` ([download from here](https://raiman.github.io/SikuliX1/downloads.html))
- - a Python installation 2.7 up to 3.7 (3.7 recommended)
+ - a Python installation 2.7 up to 3.9 (testing on 3.9)
  - run ``pip install py4j`` to get the support on the Python side
  - a mature Python IDE (I use IntelliJ's PyCharm) or just a Python REPL.
  
@@ -53,7 +53,7 @@ To stop the server you can use the known stop hotkey (Windows: ALT-SHIFT-C, Mac:
 - anything might be changed at any time without notice
 - errors and warnings you get in the terminal window can be ignored, as long as it works as intended on the Python side
 - output coming from the SikuliX Java API is currently only going to the terminal window
-- my current development work is on macOS 10.14/Windows 10, Java 11/12, Python 3.7 with PyCharm
+- my current development work is on macOS 11, Windows 10, Java 11/15, Python 3.9 with PyCharm
 - no tests on Linux yet
 
 **An example**
